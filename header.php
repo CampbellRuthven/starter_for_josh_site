@@ -34,7 +34,7 @@
 
 </head>
 <body>
-    <header class="container-fluid bg1">
+<header class="container-fluid" style="background-size: cover; background-image: url(<?php the_field('headerbackgroundimage') ?>);">
     <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" href="#"><span class="josh">JOSH</span><span class="orange">WHITKIN</span></a>
@@ -62,7 +62,7 @@ wp_nav_menu( array(
       </nav>
 
         <div class="container tag">
-            <h1>Games Design For the Future</h1>
+        <h1><?php the_field('maintagline'); ?></h1>
         </div> <!-- container -->
         <?php wp_head(); ?> <!-- very important that this is added--> 
         </header>
